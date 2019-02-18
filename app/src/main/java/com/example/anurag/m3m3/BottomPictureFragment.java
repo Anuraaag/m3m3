@@ -27,13 +27,12 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-
 import static android.app.Activity.RESULT_OK;
+
 
 public class BottomPictureFragment extends Fragment {
 

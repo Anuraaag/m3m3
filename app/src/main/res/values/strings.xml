@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">m3m3</string>
     <string name="memeButton">Create m3m3</string>
+    <string name="edit">Edit m3m3</string>
 </resources>

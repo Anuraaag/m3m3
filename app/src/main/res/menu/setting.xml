@@ -2,11 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/edit"
-        android:title="Edit"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_edit_black_24dp"/>
-
     <item android:id="@+id/share"
         android:title="share"
         app:showAsAction="always"
@@ -20,6 +15,5 @@
 
     <item android:id="@+id/text3"
         android:title="text3"/>
-
 
 </menu>

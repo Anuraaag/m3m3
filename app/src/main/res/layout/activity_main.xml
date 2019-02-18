@@ -8,7 +8,6 @@
     android:gravity="center"
     android:id="@+id/main">
 
-
     <fragment
         android:id="@+id/fragment1"
         android:name="com.example.anurag.m3m3.TopSectionFragment"
@@ -24,8 +23,18 @@
         android:name="com.example.anurag.m3m3.BottomPictureFragment"
         android:layout_width="350dp"
         android:layout_height="300dp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="200dp"
         tools:layout="@layout/bottom_picture_fragment" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="195dp" />
 
 </RelativeLayout>

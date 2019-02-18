@@ -26,6 +26,8 @@ public class TopSectionFragment extends Fragment {
 
     public interface TopSectionListener{
         public void generateMeme(String Top, String bottom);  // it's like the main activity promises to create a method generateMeme in itself
+
+        public void createPopup();
     }
 
 
@@ -55,15 +57,26 @@ public class TopSectionFragment extends Fragment {
                 buttonClicked(v);
             }
         });
+
+        final Button edit = view.findViewById(R.id.edit);
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityCommander.createPopup();
+            }
+        });
+
         return view;
     }
 
     public void buttonClicked(View v)
     {
         //keyboard disappearing when this component is focused upon
+
         InputMethodManager imm = (InputMethodManager) getContext().getSystemService(INPUT_METHOD_SERVICE);
         //if (null != getContext().getCurrentFocus())
         imm.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(), 0);
+
 
         //the activityCommander calls the method generateMeme() present in MainActivity.java
         activityCommander.generateMeme(topTextInput.getText().toString(), bottomTextInput.getText().toString());
